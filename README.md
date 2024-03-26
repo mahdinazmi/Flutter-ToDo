@@ -15,3 +15,6 @@ task updating: This usecase is available for task updating.
 
 # Dependency Injection
 For dependency injection, the get_it library is used, which is a very simple library for dependency injection. In the service locator file, the required classes and usecases are registered as singletons.
+
+# Database
+The floor library is used for the local database. Floor provides a neat SQLite abstraction for your Flutter applications.It comes with automatic mapping between in-memory objects and database rows while still offering full control of the database with the use of SQL.
