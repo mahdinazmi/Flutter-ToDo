@@ -18,3 +18,6 @@ For dependency injection, the get_it library is used, which is a very simple lib
 
 # Database
 The Floor library is used for the local database. Floor provides a neat SQLite abstraction for your Flutter applications.It comes with automatic mapping between in-memory objects and database rows while still offering full control of the database with the use of SQL.
+
+# Presentation
+This layer includes three sections: pages, widgets, and bloc. Bloc is used for state management.
