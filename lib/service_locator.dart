@@ -10,17 +10,17 @@ import 'package:get_it/get_it.dart';
 final sl = GetIt.instance;
 
 Future<void> initializeDependencies() async {
-
+  
+  // Database
   final database = await $FloorAppDatabase.databaseBuilder('app_database.db').build();
   sl.registerSingleton<AppDatabase>(database);
   
-  
+  // Repositories
   sl.registerSingleton < TaskRepository > (
     TaskRepositoryImpl(sl())
   );
 
-  //UseCases
-  
+  // UseCases
   sl.registerSingleton<TaskCreationUseCase>(
     TaskCreationUseCase(sl())
   );
