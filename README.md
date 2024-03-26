@@ -12,3 +12,6 @@ In this project, we have three usecases for the task entity.
 get created tasks: This usecase is for getting all available tasks from the local database.
 task creation: This is the use case for creating a new task.
 task updating: This usecase is available for task updating.
+
+# Dependency Injection
+For dependency injection, the get_it library is used, which is a very simple library for dependency injection. In the service locator file, the required classes and usecases are registered as singletons.
